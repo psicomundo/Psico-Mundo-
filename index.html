@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PsicoMundo | Neurodivergencias y salud mental</title>
+    <meta name="description" content="PsicoMundo, recursos inclusivos sobre neurodivergencias, salud mental, apoyo y comunidad." />
+    <link rel="icon" href="Psico.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a class="logo" href="#inicio">
+          <span class="logo-mark">
+            <img src="Psico.png" alt="Logo PsicoMundo" class="logo-img" />
+          </span>
+          <span>PsicoMundo</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+          <a href="#que">Neurodivergencias</a>
+          <a href="#tipos">Tipos</a>
+          <a href="#test">Test</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#comunidad">Comunidad</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button id="theme-toggle" class="theme-switcher" type="button">Modo claro</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <span class="hero-badge">Inclusión y confianza</span>
+          <h1 class="hero-title">Bienvenido a PsicoMundo</h1>
+          <p class="hero-copy">Un espacio creado para informar, acompañar y ofrecer recursos accesibles sobre neurodivergencias y salud mental con empatía y diseño inclusivo.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#que">Explorar</a>
+            <a class="btn-secondary" href="#test">Test orientativo</a>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-card">
+            <strong>Empatía real</strong>
+            <p>Mente abierta, contenido cálido y seguro para experiencias neurodivergentes.</p>
+          </div>
+          <div class="hero-card">
+            <strong>Comunidad segura</strong>
+            <p>Un lugar donde compartir y aprender sin juicios.</p>
+          </div>
+          <div class="hero-card">
+            <strong>Diseño relajante</strong>
+            <p>Colores suaves y formas abstractas para una experiencia tranquila.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="que" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">¿Qué son las neurodivergencias?</span>
+          <h2>Formas distintas de pensar, sentir y aprender.</h2>
+          <p>Las neurodivergencias son variaciones naturales en el funcionamiento cerebral. Aquí encontrarás explicaciones sencillas, iconos visuales y apoyo para comprenderlas sin estigmas.</p>
+        </div>
+        <div class="grid-3" style="margin-top:2rem;">
+          <article class="card">
+            <div class="icon">💜</div>
+            <h3>Inclusión</h3>
+            <p>Reconocemos el valor de cada persona y celebramos la diversidad cognitiva con respeto.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🌱</div>
+            <h3>Comprensión</h3>
+            <p>Explicaciones claras para que cualquier persona pueda entender mejor el mundo neurodivergente.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🔍</div>
+            <h3>Apoyo</h3>
+            <p>Recursos prácticos, consejos y herramientas para acompañar el día a día con confianza.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tipos" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">Tipos de neurodivergencias</span>
+          <h2>Conoce cada condición desde un enfoque positivo.</h2>
+          <p>Entiende qué caracteriza a cada condición y descubre fortalezas, necesidades y apoyos recomendados.</p>
+        </div>
+        <div class="grid-3" style="margin-top:2rem;">
+          <article class="card">
+            <div class="icon">🧩</div>
+            <h3>TEA</h3>
+            <p>Autismo: mundo sensorial distinto, rutinas importantes y pensamiento profundo.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('tea')">Leer más</button>
+            <div id="detail-tea" class="card-detail" hidden>Fortalezas como enfoque intenso y memoria visual, junto a sensibilidad sensorial que merece respeto.</div>
+          </article>
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>TDAH</h3>
+            <p>Atención activa e impulsividad: energía, creatividad y necesidad de estructuras flexibles.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('tdah')">Leer más</button>
+            <div id="detail-tdah" class="card-detail" hidden>Apoyos como tiempos breves, recordatorios visuales y espacios para moverse pueden ser muy útiles.</div>
+          </article>
+          <article class="card">
+            <div class="icon">📘</div>
+            <h3>Dislexia</h3>
+            <p>Lectura con ritmo propio: más énfasis en comprensión, menos en velocidad.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('dislexia')">Leer más</button>
+            <div id="detail-dislexia" class="card-detail" hidden>Las personas disléxicas suelen pensar de forma creativa y encontrar soluciones originales.</div>
+          </article>
+          <article class="card">
+            <div class="icon">🌊</div>
+            <h3>Ansiedad</h3>
+            <p>Emociones intensas: alerta elevada que necesita técnicas de calma y auto-cuidado.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('ansiedad')">Leer más</button>
+            <div id="detail-ansiedad" class="card-detail" hidden>Respiración, descansos y espacios seguros ayudan a recuperar equilibrio emocional.</div>
+          </article>
+          <article class="card">
+            <div class="icon">✨</div>
+            <h3>Altas capacidades</h3>
+            <p>Aprendizaje acelerado y curiosidad intensa que necesitan desafíos adecuados.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('altas')">Leer más</button>
+            <div id="detail-altas" class="card-detail" hidden>Cuando se acompañan bien, las personas con altas capacidades pueden desarrollar su potencial con alegría.</div>
+          </article>
+          <article class="card">
+            <div class="icon">🌀</div>
+            <h3>Tourette</h3>
+            <p>Tics motores o vocales: respuestas involuntarias que requieren comprensión y apoyo.</p>
+            <button class="btn-card" type="button" onclick="toggleDetail('tourette')">Leer más</button>
+            <div id="detail-tourette" class="card-detail" hidden>Mostrar paciencia, evitar burlas y ofrecer un entorno seguro es clave.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="test" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">Test interactivo</span>
+          <h2>Un test orientativo para conocer tendencias.</h2>
+          <p>Responde con honestidad. Esta guía visual ofrece pistas sobre posibles tendencias cognitivas, sin sustituir una evaluación profesional.</p>
+        </div>
+
+        <div class="test-panel" style="margin-top:2rem; gap:1.5rem;">
+          <div class="alert-card">
+            <strong>Aviso importante</strong>
+            <p>“Este test es únicamente orientativo y no reemplaza un diagnóstico profesional.”</p>
+          </div>
+
+          <div class="alert-card">
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill"></div>
+            </div>
+            <p id="progress-label" style="margin-top:0.9rem;font-weight:700;">0% completado</p>
+          </div>
+
+          <div class="question-card">
+            <h3 id="question-title"></h3>
+            <p class="question-meta">Pregunta <span id="question-index"></span></p>
+            <div id="answer-options" class="answer-grid"></div>
+            <div class="question-controls">
+              <button id="prev-btn" class="btn-secondary" type="button">Anterior</button>
+              <button id="next-btn" class="btn-primary" type="button">Siguiente</button>
+            </div>
+          </div>
+
+          <a id="view-results-btn" class="btn-primary hidden" href="#resultados">Ver resultados</a>
+        </div>
+      </section>
+
+      <section id="resultados" class="body-section hidden">
+        <div class="section-header">
+          <span class="hero-badge">Resultados del test</span>
+          <h2>Tu tendencia principal</h2>
+          <p>Estas conclusiones se basan en tus respuestas y son una guía orientativa que no sustituye un diagnóstico profesional.</p>
+        </div>
+        <div class="alert-card" id="result-summary" style="margin-top:1.5rem;"></div>
+        <div id="result-list" class="results-grid" style="margin-top:1.5rem;"></div>
+      </section>
+
+      <section id="recursos" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">Recursos y ayuda</span>
+          <h2>Consejos, técnicas y contenidos para sentirte más apoyado.</h2>
+          <p>Aquí encuentras ideas prácticas para organización, estudio, aprendizaje y bienestar emocional.</p>
+        </div>
+        <div class="resource-grid" style="margin-top:2rem;">
+          <div class="resources-list">
+            <a href="#">Técnicas de organización diaria</a>
+            <a href="#">Métodos de estudio inclusivos</a>
+            <a href="#">Recursos educativos accesibles</a>
+            <a href="#">Videos y enlaces útiles</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidad" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">Comunidad</span>
+          <h2>Un espacio seguro para compartir experiencias.</h2>
+          <p>Historias reales que inspiran y conectan con personas que viven neurodivergencias.</p>
+        </div>
+        <div class="community-grid" style="margin-top:2rem;">
+          <article class="community-card">
+            <h3>Sofía M.</h3>
+            <p>Estudiante de psicología</p>
+            <p>Encontré consejos que alivian la ansiedad escolar y explicaciones que son muy claras.</p>
+          </article>
+          <article class="community-card">
+            <h3>Andrés R.</h3>
+            <p>Padre de adolescente</p>
+            <p>Este sitio me ayudó a entender mejor el mundo sensorial de mi hijo y a acompañarlo sin presiones.</p>
+          </article>
+          <article class="community-card">
+            <h3>María G.</h3>
+            <p>Docente inclusiva</p>
+            <p>Me encantó el enfoque visual, la lectura fácil y el tono respetuoso para trabajar en el aula.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="body-section">
+        <div class="section-header">
+          <span class="hero-badge">Contacto</span>
+          <h2>Conecta con la comunidad PsicoMundo.</h2>
+          <p>Envía tu mensaje, comparte sugerencias o solicita recursos adicionales. Queremos escuchar tu voz.</p>
+        </div>
+        <div class="grid-2" style="margin-top:2rem;">
+          <div class="contact-info">
+            <h3>Redes sociales</h3>
+            <p style="margin:0.9rem 0 0;">Encuéntranos en Instagram, YouTube y LinkedIn para contenido inspirador y apoyo continuo.</p>
+          </div>
+          <form class="form-card" onsubmit="event.preventDefault(); alert('Gracias por escribirnos.');">
+            <h3>Escribe tu mensaje</h3>
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Tu nombre" aria-label="Nombre" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required />
+            <label for="message">Mensaje</label>
+            <textarea id="message" placeholder="Escribe tu mensaje" aria-label="Mensaje" required></textarea>
+            <button class="btn-primary" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© 2026 PsicoMundo. Un espacio inclusivo para neurodivergencias y bienestar mental.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
