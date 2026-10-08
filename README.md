@@ -5,7 +5,7 @@
 <div align="center">
 
 [![HTML5](https://img.shields.io/badge/HTML5-7C3AED?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS](https://img.shields.io/badge/CSS3-6D28D9?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![CSS](https://img.shields.io/badge/CSS3-6D28D9?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-5B21B6?style=for-the-badge&logo=javascript&logoColor=white)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 [![Estado](https://img.shields.io/badge/Estado-Activo-4C1D95?style=for-the-badge)](https://github.com/)
 
